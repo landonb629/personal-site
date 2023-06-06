@@ -10,6 +10,13 @@ export const data = [
         "timestamp": "secondTime",
         "tags": ["azure", "virtualMachine"],
         "location": "./posts/post2.md"
+    },
+    { 
+        "name": "post3",
+        "timestamp": "thirdTime",
+        "tags": ["azure", "virtualMachine"],
+        "location": "./posts/post3.md"
     }
+
 ]
 

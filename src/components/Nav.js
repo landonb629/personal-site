@@ -11,22 +11,6 @@ export const Nav = () => {
             text-decoration: none;
             padding: 16px;
         }
-        .container { 
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            margin: 10px;
-            max-width: 100%;
-            align-items: left;
-            height: 80vh;
-        }
-        .navbar { 
-            display: flex;
-            flex-direction: column;
-        }
-        .nav-links { 
-           
-        }
     `
     return(
         <Wrapper>

@@ -15,43 +15,56 @@ function App() {
   const [readable, setReadable] = useState("")
 
   const Wrapper = styled.div`
-      .left { 
-        width: 25%;
-        float: left;
-      }
-      html { 
-        box-sizing: border-box;
-      }
-  `
-
-  /*
+      .grid-container { 
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows:  auto auto auto;
   
-  */
+      }
+      .grid-header { 
+        padding: 15px;
+        margin: 15px; 
+        grid-column: 2/4;
+      }  
+      .grid-footer { 
+        padding: 15px;
+        margin: 15px;
+        grid-column: 2/4;
+        grid-row: 3/4;
+      }
+      .grid-main { 
+        grid-column: 2/4;
+        grid-row: 2/3;
+      }
+      .grid-menu { 
+        grid-column: 1/2;
+        grid-row: 1/4;
+        
+      }
+      `
+
+
   return (
     <Wrapper>
-    <div className='app'>
-      <div className='left'>
+    <div className='grid-container'>
+      <div className='grid-header'>
+      </div>
+      <div className='grid-menu'>
           <Nav />
       </div>
-      <main>
+      <div className='grid-main'>
       <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={ <About />} />
           <Route path="/posts" element={ <Posts />} />
           <Route path=":id" exact={true} element={ <Post/>}/>
       </Routes>
-      </main>
-    <footer className=''>
+      </div>
+    <footer className='grid-footer'>
           <Footer />
     </footer>
     </div>
     </Wrapper> 
-    /*
-    <div>
-      <ReactMarkdown children={readable}/>
-    </div>
-
-    */
   );
 }
 
