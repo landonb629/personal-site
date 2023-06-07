@@ -1,6 +1,19 @@
 import { useEffect, useState } from 'react';
 import {useParams, Link} from 'react-router-dom'
 import ReactMarkdown from 'react-markdown';
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+    h1 { 
+        text-align: center;
+    }
+    h3 { 
+        text-align: left;
+    }
+    p { 
+        padding: 15px
+    }
+`
 
 
 export const Post = () => { 
@@ -27,9 +40,11 @@ export const Post = () => {
         getPosts()
     },[])
     return(
-        <div>
+        <Wrapper>
+        <div className='content'>
          <ReactMarkdown children={content} />
          <Link to="/">back</Link>
         </div>
+        </Wrapper>
     )
 }

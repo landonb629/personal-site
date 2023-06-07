@@ -8,12 +8,17 @@ const Wrapper = styled.div`
    .post-container { 
        display: flex;
        flex-direction: column;
-       align-items: left;
-   }
-   .post { 
+       justify-content: left;
        padding: 20px;
    }
-
+   .posts-children { 
+       padding: 20px;
+   }
+`
+const Button = styled.div`
+   .btn-container { 
+       background-color: red;
+   }
 `
 
 export const Home = () => { 
@@ -35,20 +40,24 @@ export const Home = () => {
     }
     return(
         <Wrapper>
-        <div className='post-container'>
+        <div className='home-hero'>
         {
             posts.map((post)=> { 
                 return(
-                  <div className='post'>
-                  <h2 className='title'><Link to={`/${post.location}`}>{post.name}</Link></h2>
-                  <p className='timestamp'>{post.timestamp}</p>
-                  <p className='tags'>tags: { post.tags.map((tag)=> { return(tag + ' ') })}</p>
+                  <div className='posts-container'>
+                    <div className='posts-children'>
+                        <h2 className='title'><Link to={`/${post.location}`}>{post.name}</Link></h2>
+                        <p className='timestamp'>{post.timestamp}</p>
+                        <p className='tags'>tags: { post.tags.map((tag)=> { return(tag + ' ') })}</p>
+                    </div>
                   </div>
                 )
-             
             })
-        }
-    </div>
+        } 
+        </div>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <button style={{height: 25, width: 75, borderRadius: 5, backgroundColor: 'beige'}}>Load More</button>
+        </div>
     </Wrapper>
     )
     

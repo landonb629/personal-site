@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import { FaGithub, FaLinkedin} from "react-icons/fa";
+
 export const Nav = () => { 
     // Home Tags About Posts
     const Wrapper = styled.div`
@@ -23,6 +25,14 @@ export const Nav = () => {
         .link:hover { 
             color: white;
         }
+        .footer{ 
+            position: fixed;
+            bottom: 0;
+            align-items: center;
+        }
+        .footer-items{ 
+            
+        }
     `
     return(
         <Wrapper>
@@ -37,6 +47,10 @@ export const Nav = () => {
             <Link to="/tags" className='link'>Tags</Link>
             <Link to="/posts" className='link'>Posts</Link>
         </nav>
+        <div className='footer'>
+           <p className='footer-items'>{<FaGithub />}</p>
+           <p className='footer-items'>{ <FaLinkedin />}</p>    
+        </div>
         </div>
         </Wrapper>
     )

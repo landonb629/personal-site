@@ -17,6 +17,5 @@ export const data = [
         "tags": ["azure", "virtual machines"],
         "location": "post3"
     }
-
 ]
 

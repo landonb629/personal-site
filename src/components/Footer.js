@@ -1,27 +1,18 @@
 import styled from 'styled-components'
 export const Footer = () => { 
     const Wrapper = styled.div`
-        ul { 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        li { 
-            list-style-type: none;
-            padding: 10px;
-        }
         .footer { 
             bottom: 0;
+            left: 0;
+            position: fixed;
+            text-align: center;
+            width: 100;
         }
     `
     return(
     <Wrapper>
     <div className='footer'>
-        <ul>
-            <li>Github</li>
-            <li>LinkedIn</li>
-            <li>Resume</li>
-        </ul>
+        <p>github linkedin resume</p>
     </div>
     </Wrapper>
     )
