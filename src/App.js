@@ -19,7 +19,8 @@ function App() {
         display: grid;
         grid-template-columns: 1fr 2fr 2fr;
         grid-template-rows:  auto auto auto;
-  
+        width: 100vw;
+        height: 100vh;
       }
       .grid-header { 
         padding: 15px;
@@ -35,11 +36,13 @@ function App() {
       .grid-main { 
         grid-column: 2/4;
         grid-row: 2/3;
+        text-align: center;
       }
       .grid-menu { 
         grid-column: 1/2;
         grid-row: 1/4;
-        
+        background-color: #4B5320;
+        height: 100%;
       }
       `
 

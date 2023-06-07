@@ -1,21 +1,21 @@
 export const data = [ 
     {
-        "name": "post1",
-        "timestamp": "time",
-        "tags": ["aws","beanstalk"],
-        "location": "./posts/post1.md"
+        "name": "Learning Golang: part 1",
+        "timestamp": "12/1/2022",
+        "tags": ["golang","software development"],
+        "location": "post1"
     },
     { 
-        "name": "post2",
-        "timestamp": "secondTime",
-        "tags": ["azure", "virtualMachine"],
-        "location": "./posts/post2.md"
+        "name": "how to use ECS service connect for DNS resolution",
+        "timestamp": "1/12/2023",
+        "tags": ["aws", "containers", "ecs"],
+        "location": "post2"
     },
     { 
-        "name": "post3",
-        "timestamp": "thirdTime",
-        "tags": ["azure", "virtualMachine"],
-        "location": "./posts/post3.md"
+        "name": "deploying a full stack application on azure virtual machine scalesets",
+        "timestamp": "10/24/2022",
+        "tags": ["azure", "virtual machines"],
+        "location": "post3"
     }
 
 ]

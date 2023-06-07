@@ -3,28 +3,40 @@ import {Link} from 'react-router-dom'
 export const Nav = () => { 
     // Home Tags About Posts
     const Wrapper = styled.div`
+        .container { 
+            display: grid;
+            text-align: center;
+        }
+        .grid-header { 
+            grid-column: 1/3;
+        }
         ul { 
             list-style-type: none;
-
         }
-        li { 
-            text-decoration: none;
-            padding: 16px;
+        .navbar { 
+            grid-column: 1/3;
+            display: grid;
+        }
+        .link { 
+            padding: 20px;
+        }
+        .link:hover { 
+            color: white;
         }
     `
     return(
         <Wrapper>
         <div className='container'>
-        <div className='intro'>
+        <div className='grid-header'>
             <h2>Landon Babay</h2>
             <p>DevOps Engineer</p>
         </div>
-        <ul className='navbar'>
-            <li className='nav-links'><Link to="/">Home</Link></li>
-            <li className='nav-links'><Link to="/about">About</Link></li>
-            <li className='nav-links'><Link to="/tags">Tags</Link></li>
-            <li className='nav-links'><Link to="/posts">Posts</Link></li>
-        </ul>
+        <nav className='navbar'>
+            <Link to="/" className='link'>Home</Link>
+            <Link to="/about" className='link'>About</Link>
+            <Link to="/tags" className='link'>Tags</Link>
+            <Link to="/posts" className='link'>Posts</Link>
+        </nav>
         </div>
         </Wrapper>
     )
