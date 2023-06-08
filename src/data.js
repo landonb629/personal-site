@@ -16,6 +16,12 @@ export const data = [
         "timestamp": "10/24/2022",
         "tags": ["azure", "virtual machines"],
         "location": "post3"
+    },
+    {
+        "name": "passing environment variables to react applications",
+        "timestamp": "6/8/2023",
+        "tags": ["react", "docker"],
+        "location": "passing-env-vars-to-react"
     }
 ]
 

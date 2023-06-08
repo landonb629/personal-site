@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components'
 import { SinglePost } from './components/SinglePost';
 import {Post} from './components/Post'
+import Header from './components/Header'
 
 function App() {
   const [readable, setReadable] = useState("")
@@ -17,24 +18,25 @@ function App() {
   const Wrapper = styled.div`
       .grid-container { 
         display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows:  auto auto auto;
+        grid-template-columns: .5fr 2fr 2fr;
         width: 100vw;
         height: 100vh;
       }
+      /*
       .grid-header { 
         padding: 15px;
         margin: 15px; 
         grid-column: 2/4;
       }  
-      /*
+      */
       .grid-footer { 
-        padding: 15px;
-        margin: 15px;
         grid-column: 2/4;
         grid-row: 3/4;
       }
-      */
+      .grid-header { 
+        grid-column: 2/4;
+        grid-row: 1/2;
+      }
       .grid-main { 
         grid-column: 2/4;
         grid-row: 2/3;
@@ -53,6 +55,9 @@ function App() {
   return (
     <Wrapper>
     <div className='grid-container'>
+      <div className='grid-header'>
+        <Header />
+      </div>
       <div className='grid-menu'>
           <Nav />
       </div>
@@ -63,6 +68,9 @@ function App() {
           <Route path="/posts" element={ <Posts />} />
           <Route path=":id" exact={true} element={ <Post/>}/>
       </Routes>
+      </div>
+      <div className='grid-footer'>
+        <Footer />
       </div>
     </div>
     </Wrapper> 

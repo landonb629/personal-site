@@ -6,13 +6,18 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
     h1 { 
         text-align: center;
+        padding: 50px
     }
     h3 { 
-        text-align: left;
+        text-align: center;
+        text-decoration: underline;
     }
     p { 
-        padding: 15px
+        padding: 25px;
+        padding-bottom: 100px;
+        width: 65%;
     }
+    
 `
 
 

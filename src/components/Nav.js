@@ -47,10 +47,6 @@ export const Nav = () => {
             <Link to="/tags" className='link'>Tags</Link>
             <Link to="/posts" className='link'>Posts</Link>
         </nav>
-        <div className='footer'>
-           <p className='footer-items'>{<FaGithub />}</p>
-           <p className='footer-items'>{ <FaLinkedin />}</p>    
-        </div>
         </div>
         </Wrapper>
     )
