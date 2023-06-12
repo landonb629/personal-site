@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin} from "react-icons/fa";
 const Wrapper = styled.ul`
    display: flex;
    align-items: flex-end;
-   justify-content: right;
+   justify-content: center;
    height: 100%;
    .footer-items { 
        padding-right: 15px;
@@ -14,8 +14,7 @@ const Wrapper = styled.ul`
 export const Footer = () => { 
     return(
     <Wrapper>
-        <li className='footer-items'>{<FaGithub />}</li>
-        <li className='footer-items'>{ <FaLinkedin />}</li>    
+        <div>Landon Babay</div>    
     </Wrapper>
     ) 
 }

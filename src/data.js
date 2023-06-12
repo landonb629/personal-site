@@ -1,27 +1,15 @@
 export const data = [ 
     {
-        "name": "Learning Golang: part 1",
-        "timestamp": "12/1/2022",
-        "tags": ["golang","software development"],
-        "location": "post1"
-    },
-    { 
-        "name": "how to use ECS service connect for DNS resolution",
-        "timestamp": "1/12/2023",
-        "tags": ["aws", "containers", "ecs"],
-        "location": "post2"
-    },
-    { 
-        "name": "deploying a full stack application on azure virtual machine scalesets",
-        "timestamp": "10/24/2022",
-        "tags": ["azure", "virtual machines"],
-        "location": "post3"
-    },
-    {
         "name": "passing environment variables to react applications",
         "timestamp": "6/8/2023",
         "tags": ["react", "docker"],
         "location": "passing-env-vars-to-react"
+    }, 
+    { 
+        "name": "Enabling VM insights on Azure VMs with Terraform",
+        "timestamp": "6/8/2023",
+        "tags": ["azure", "terraform"],
+        "location": "enabling-vm-insights-terraform"
     }
 ]
 

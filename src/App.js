@@ -19,16 +19,11 @@ function App() {
       .grid-container { 
         display: grid;
         grid-template-columns: .5fr 2fr 2fr;
+        grid-template-rows: .1fr auto auto;
         width: 100vw;
         height: 100vh;
       }
-      /*
-      .grid-header { 
-        padding: 15px;
-        margin: 15px; 
-        grid-column: 2/4;
-      }  
-      */
+  
       .grid-footer { 
         grid-column: 2/4;
         grid-row: 3/4;
@@ -56,7 +51,7 @@ function App() {
     <Wrapper>
     <div className='grid-container'>
       <div className='grid-header'>
-        <Header />
+        <Header/>
       </div>
       <div className='grid-menu'>
           <Nav />

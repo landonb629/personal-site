@@ -45,7 +45,7 @@ export const Nav = () => {
             <Link to="/" className='link'>Home</Link>
             <Link to="/about" className='link'>About</Link>
             <Link to="/tags" className='link'>Tags</Link>
-            <Link to="/posts" className='link'>Posts</Link>
+            <Link to="/Projects" className='link'>Projects</Link>
         </nav>
         </div>
         </Wrapper>
