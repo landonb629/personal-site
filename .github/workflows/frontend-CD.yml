@@ -27,6 +27,7 @@ jobs:
 
     - name: build react application 
       run: |
+        export CI=false
         npm install
         npm run build 
     
