@@ -21,7 +21,7 @@ jobs:
         node-version: 18.x
 
     - name: build react application 
-      uses: npm run build 
+      run: npm run build 
     
     - name: deploy to static web apps
       uses: Azure/static-web-apps-deploy@v1
