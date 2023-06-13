@@ -19,6 +19,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18.x
+    
+    - name: output current directory
+      run: |
+        pwd 
+        ls
 
     - name: build react application 
       run: |
