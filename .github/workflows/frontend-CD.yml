@@ -34,7 +34,7 @@ jobs:
       uses: Azure/static-web-apps-deploy@v1
       with:
         azure_static_web_apps_api_token: ${{secrets.AZURE_STATIC_WEB_APP_API_TOKEN}}
-        app_location: /
+        app_location: ./build/
         output_location: build
         app_build_command: "npm run build"
         action: "upload"
