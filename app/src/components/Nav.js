@@ -21,6 +21,7 @@ export const Nav = () => {
         }
         .link { 
             padding: 20px;
+            text-decoration: none;
         }
         .link:hover { 
             color: white;

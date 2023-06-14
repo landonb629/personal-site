@@ -1,0 +1,5 @@
+type Requests @model {
+  id: ID
+  requests: Number
+}
+

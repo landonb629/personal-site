@@ -10,6 +10,30 @@ export const data = [
         "timestamp": "6/8/2023",
         "tags": ["azure", "terraform"],
         "location": "enabling-vm-insights-terraform"
+    },
+    { 
+        "name": "Enabling VM insights on Azure VMs with Terraform",
+        "timestamp": "6/8/2023",
+        "tags": ["azure", "terraform"],
+        "location": "enabling-vm-insights-terraform"
+    },
+    { 
+        "name": "Enabling VM insights on Azure VMs with Terraform",
+        "timestamp": "6/8/2023",
+        "tags": ["azure", "terraform"],
+        "location": "enabling-vm-insights-terraform"
+    },
+    { 
+        "name": "Enabling VM insights on Azure VMs with Terraform",
+        "timestamp": "6/8/2023",
+        "tags": ["azure", "terraform"],
+        "location": "enabling-vm-insights-terraform"
+    },
+    { 
+        "name": "Enabling VM insights on Azure VMs with Terraform",
+        "timestamp": "6/8/2023",
+        "tags": ["azure", "terraform"],
+        "location": "enabling-vm-insights-terraform"
     }
 ]
 

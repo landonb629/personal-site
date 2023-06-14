@@ -22,8 +22,8 @@ function App() {
         grid-template-rows: .1fr auto auto;
         width: 100vw;
         height: 100vh;
-      }
   
+      }
       .grid-footer { 
         grid-column: 2/4;
         grid-row: 3/4;
@@ -39,10 +39,12 @@ function App() {
       .grid-menu { 
         grid-column: 1/2;
         grid-row: 1/4;
-        background-color: #4B5320;
+        background-color: #696969;
         height: 100%;
         display: flex;
         justify-content: center;
+        padding: 25px;
+        border-right: 1px #F6F6F6 solid;
       }
       `
 

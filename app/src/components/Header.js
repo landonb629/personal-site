@@ -10,7 +10,7 @@ import Navigator from './Navigator'
 const Wrapper = styled.div`
     padding: 15px;
     margin: 15px;
-    border-bottom: solid black 1px;
+    border-bottom: solid #696969 1px;
     .container { 
         display: flex;
         justify-content: right;

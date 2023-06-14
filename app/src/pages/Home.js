@@ -6,14 +6,17 @@ import styled from 'styled-components'
 import {FaTags} from 'react-icons/fa'
 
 const Wrapper = styled.div` 
-   .post-container { 
+   .home-hero { 
        display: flex;
-       flex-direction: column;
-       justify-content: left;
-       padding: 20px;
+       flex-wrap: wrap;
    }
    .posts-children { 
        padding: 20px;
+       height: 250px;
+       width: 250px;
+       border: 2px solid black;
+       border-radius: 15px;
+       margin: 10px
    }
    .tag-container { 
       display: flex;
@@ -43,6 +46,17 @@ export const Home = () => {
 
     useEffect(()=> { 
         populatePost()
+        const getFromAPI = async () => { 
+            try {
+                console.log('running static webapp backend')
+                const request = await fetch("/api/message/")
+                const response = await request.json()
+                console.log(response)
+            } catch(error) { 
+                console.log('didnt return anything');
+            }
+        }
+        getFromAPI()
         console.log(posts)
     },[])
 
@@ -74,9 +88,6 @@ export const Home = () => {
                 )
             })
         } 
-        </div>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <button style={{height: 25, width: 75, borderRadius: 5, backgroundColor: 'beige'}}>Load More</button>
         </div>
     </Wrapper>
     )
