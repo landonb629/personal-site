@@ -6,6 +6,7 @@ const Wrapper = styled.ul`
    align-items: flex-end;
    justify-content: center;
    height: 100%;
+   background-color: #e3e3e3;
    .footer-items { 
        padding-right: 15px;
        list-style-type: none;

@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import { FaGithub, FaLinkedin} from "react-icons/fa";
+import {AiFillHome, AiFillTags, AiFillProject} from 'react-icons/ai'
 
 export const Nav = () => { 
     // Home Tags About Posts
     const Wrapper = styled.div`
+        color: #e3e3e3;
         .container { 
             display: grid;
             text-align: center;
+            row-gap: 150px;
         }
         .grid-header { 
             grid-column: 1/3;
@@ -22,6 +25,7 @@ export const Nav = () => {
         .link { 
             padding: 20px;
             text-decoration: none;
+            color: #e3e3e3;
         }
         .link:hover { 
             color: white;
@@ -31,8 +35,14 @@ export const Nav = () => {
             bottom: 0;
             align-items: center;
         }
-        .footer-items{ 
-            
+        .link-container { 
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon { 
+            padding-right: 15px;
         }
     `
     return(
@@ -43,10 +53,16 @@ export const Nav = () => {
             <p>DevOps Engineer</p>
         </div>
         <nav className='navbar'>
-            <Link to="/" className='link'>Home</Link>
-            <Link to="/about" className='link'>About</Link>
-            <Link to="/tags" className='link'>Tags</Link>
-            <Link to="/Projects" className='link'>Projects</Link>
+            <div className='link-container'>
+                <Link to="/" className='link'><AiFillHome className='icon'/>Home</Link>
+            </div>
+            <div className='link-container'> 
+                <Link to="/tags" className='link'><AiFillTags className='icon'/>Tags</Link>
+            </div>
+            <div className='link-container'>
+                <Link to="/Projects" className='link'><AiFillProject className='icon'/>Projects</Link>
+            </div>
+            
         </nav>
         </div>
         </Wrapper>

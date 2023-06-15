@@ -1,38 +1,14 @@
 export const data = [ 
     {
-        "name": "passing environment variables to react applications",
+        "name": "Passing Environment Variables to React Applications",
         "timestamp": "6/8/2023",
-        "tags": ["react", "docker"],
+        "tags": ["React", "Docker"],
         "location": "passing-env-vars-to-react"
     }, 
     { 
-        "name": "Enabling VM insights on Azure VMs with Terraform",
+        "name": "Enabling VM Insights on Azure VMs with Terraform",
         "timestamp": "6/8/2023",
-        "tags": ["azure", "terraform"],
-        "location": "enabling-vm-insights-terraform"
-    },
-    { 
-        "name": "Enabling VM insights on Azure VMs with Terraform",
-        "timestamp": "6/8/2023",
-        "tags": ["azure", "terraform"],
-        "location": "enabling-vm-insights-terraform"
-    },
-    { 
-        "name": "Enabling VM insights on Azure VMs with Terraform",
-        "timestamp": "6/8/2023",
-        "tags": ["azure", "terraform"],
-        "location": "enabling-vm-insights-terraform"
-    },
-    { 
-        "name": "Enabling VM insights on Azure VMs with Terraform",
-        "timestamp": "6/8/2023",
-        "tags": ["azure", "terraform"],
-        "location": "enabling-vm-insights-terraform"
-    },
-    { 
-        "name": "Enabling VM insights on Azure VMs with Terraform",
-        "timestamp": "6/8/2023",
-        "tags": ["azure", "terraform"],
+        "tags": ["Azure", "Terraform"],
         "location": "enabling-vm-insights-terraform"
     }
 ]

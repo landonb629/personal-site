@@ -5,28 +5,30 @@ import {data} from '../data'
 import styled from 'styled-components'
 import {FaTags} from 'react-icons/fa'
 
-const Wrapper = styled.div` 
+const Wrapper = styled.div`
    .home-hero { 
-       display: flex;
-       flex-wrap: wrap;
+       color: #233142;
+       justify-content: center;
    }
    .posts-children { 
        padding: 20px;
-       height: 250px;
-       width: 250px;
-       border: 2px solid black;
-       border-radius: 15px;
-       margin: 10px
+       margin: 10px;
+       border-bottom: 1px solid #f95959;
    }
    .tag-container { 
       display: flex;
       align-items: center;
    }
    .tag { 
+       font-size: 10px;
        margin: 5px;
        padding: 5px;
-       border: solid black 1px;
-       border-radius: 15px;
+       border-radius: 10px;
+       border: 1px solid #233142;
+   }
+   .title { 
+       text-decoration: none;
+       color: #233142;
    }
 `
 const Button = styled.div`
@@ -71,7 +73,7 @@ export const Home = () => {
                 return(
                   <div className='posts-container'>
                     <div className='posts-children'>
-                        <h2 className='title'><Link to={`/${post.location}`}>{post.name}</Link></h2>
+                        <h2 className='title'><Link className='title' to={`/${post.location}`}>{post.name}</Link></h2>
                         <p className='timestamp'>{post.timestamp}</p> 
                         <div className='tag-container'>
                         <FaTags />
