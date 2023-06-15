@@ -1,13 +1,9 @@
 import './App.css';
-import ReactMarkdown from 'react-markdown'
 import {Home} from './pages/Home'
-import { About } from './pages/About';
 import {Nav} from './components/Nav'
-import {Footer} from './components/Footer'
 import {Posts} from './pages/Posts'
-import {Router, Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import styled from 'styled-components'
-import { SinglePost } from './components/SinglePost';
 import {Post} from './components/Post'
 import Header from './components/Header'
 
@@ -15,7 +11,7 @@ function App() {
   const Wrapper = styled.div`
       .grid-container { 
         display: grid;
-        grid-template-columns: .75fr 2fr 2fr;
+        grid-template-columns: .75fr 2fr 2fr auto;
         grid-template-rows: .1fr auto auto;
         width: 100vw;
         height: 100vh;
@@ -40,8 +36,6 @@ function App() {
         border-right: 1px #F6F6F6 solid;
       }
       `
-
-
   return (
     <Wrapper>
     <div className='grid-container'>
@@ -57,6 +51,9 @@ function App() {
           <Route path="/posts" element={ <Posts />} />
           <Route path=":id" exact={true} element={ <Post/>}/>
       </Routes>
+      <div className='grid-right'>
+
+      </div>
       </div>
     </div>
     </Wrapper> 

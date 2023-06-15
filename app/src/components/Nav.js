@@ -28,7 +28,7 @@ export const Nav = () => {
             color: #e3e3e3;
         }
         .link:hover { 
-            color: white;
+            color: #f95959;
         }
         .footer{ 
             position: fixed;

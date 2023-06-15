@@ -30,6 +30,9 @@ const Wrapper = styled.div`
        text-decoration: none;
        color: #233142;
    }
+   .title:hover { 
+       color: #f95959;
+   }
 `
 const Button = styled.div`
    .btn-container { 
