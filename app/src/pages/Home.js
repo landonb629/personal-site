@@ -4,41 +4,9 @@ import {Link} from 'react-router-dom'
 import {data} from '../data'
 import styled from 'styled-components'
 import {FaTags} from 'react-icons/fa'
+import {SiKubernetes, SiMicrosoftazure, SiLinux} from 'react-icons/si'
+import {FaAws} from 'react-icons/fa'
 
-const Wrapper = styled.div`
-   .home-hero { 
-       color: #233142;
-       justify-content: center;
-   }
-   .posts-children { 
-       padding: 20px;
-       margin: 10px;
-       border-bottom: 1px solid #f95959;
-   }
-   .tag-container { 
-      display: flex;
-      align-items: center;
-   }
-   .tag { 
-       font-size: 10px;
-       margin: 5px;
-       padding: 5px;
-       border-radius: 10px;
-       border: 1px solid #233142;
-   }
-   .title { 
-       text-decoration: none;
-       color: #233142;
-   }
-   .title:hover { 
-       color: #f95959;
-   }
-`
-const Button = styled.div`
-   .btn-container { 
-       background-color: red;
-   }
-`
 
 export const Home = () => { 
     
@@ -69,7 +37,6 @@ export const Home = () => {
         return <div>Loading....</div>
     }
     return(
-        <Wrapper>
         <div className='home-hero'>
         {
             posts.map((post)=> { 
@@ -94,7 +61,6 @@ export const Home = () => {
             })
         } 
         </div>
-    </Wrapper>
     )
     
 }

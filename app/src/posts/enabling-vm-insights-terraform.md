@@ -1,4 +1,4 @@
-# How to enable VM insights on azure VMs with Terraform 
+# How to Enable VM insights on Azure VMs with Terraform 
 
 Enabling VM insights using Terraform isn't straight forward. Here is how to do it. This post intends to highlight the following:
 
