@@ -19,17 +19,6 @@ export const Home = () => {
 
     useEffect(()=> { 
         populatePost()
-        const getFromAPI = async () => { 
-            try {
-                console.log('running static webapp backend')
-                const request = await fetch("/api/message/")
-                const response = await request.json()
-                console.log(response)
-            } catch(error) { 
-                console.log('didnt return anything');
-            }
-        }
-        getFromAPI()
         console.log(posts)
     },[])
 

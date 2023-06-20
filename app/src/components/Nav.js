@@ -23,7 +23,7 @@ export const Nav = () => {
                 <Link to="/tags" className='link'><AiFillTags className='icon'/>Tags</Link>
             </div>
             <div className='link-container'>
-                <Link to="/Projects" className='link'><AiFillProject className='icon'/>Projects</Link>
+                <Link to="/projects" className='link'><AiFillProject className='icon'/>Projects</Link>
             </div>
             </div>
         </nav>

@@ -10,6 +10,7 @@ import {RxHamburgerMenu} from 'react-icons/rx'
 import {useState} from 'react'
 import {FaAws} from 'react-icons/fa'
 import {SiKubernetes, SiMicrosoftazure, SiLinux} from 'react-icons/si'
+import {Projects} from './components/Projects'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/posts" element={ <Posts />} />
           <Route path=":id" exact={true} element={ <Post/>}/>
+          <Route path="/projects" exact={true} element={ <Projects />} />
       </Routes>
       </div>
       <footer>
