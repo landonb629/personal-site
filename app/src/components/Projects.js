@@ -16,6 +16,9 @@ export const Projects = () => {
     if (isLoading) { 
         return <div>Loading....</div>
     }
+    /*
+        the "state" in Link is how we are passing whether or not this is a project or post, this is allowing us to specifically tell one single component where to get the content from. if we didnt do this, we would have to create a Post and Project component, since we're passing that data, we can use a generic component called Content
+    */
     return(
         <div className='home-hero'>
             { 

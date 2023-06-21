@@ -35,7 +35,9 @@ const Wrapper = styled.div`
 export const Content = () => { 
     const [content, setContent] = useState()
     const {id} = useParams()
+    // useLocation is how we are pulling the "type" from the Link send
     const location = useLocation()
+    // passing type which is == to either "posts" or "projects"
     const {type} = location.state
 
     const fetchData = async () => { 
