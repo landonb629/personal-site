@@ -13,3 +13,12 @@ export const data = [
     }
 ]
 
+export const posts = [
+    {
+        "name": "MERN App on Azure VMSS",
+        "timestamp": "6/8/2023",
+        "tags": ["Azure", "VMs", "Terraform", "Github Actions", "CosmosDB", "NodeJs"],
+        "location": "mern-azure-vmss"
+    }
+]
+
