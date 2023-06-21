@@ -19,18 +19,15 @@ This post won't be covering what VM insights is. I'll be creating a separate pos
 
 ### High level overview of required resources 
 
-**Data collection rules** - 
+Data collection rules - 
 
-**Data collection endpoint** - 
+Data collection endpoint - 
 
-**Data collection rule assocation** - 
+Data collection rule assocation - 
 
-**VM extensions** - 
+VM extensions - 
 
-**Log analytics workspace** -
-
-
-### finding the machines that aren't being monitored
+Log analytics workspace -
 
 
 ### finding information about these for terraform with the az cli 

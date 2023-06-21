@@ -23,7 +23,7 @@ export const Projects = () => {
                     return(
                         <div className='posts-container'>
                             <div className='posts-children'>
-                                <h2 className='title'>{project.name}</h2>
+                                <h2 className='title'><Link  className='title' to={`/projects/${project.location}`} state={{type: "projects"}}>{project.name}</Link></h2>
                                 <p className='timestamp'>{project.timestamp}</p>
                                 <div className='tag-container'>
                                     <FaTags />

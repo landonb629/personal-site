@@ -25,7 +25,7 @@
 }
 
 .link-container:hover { 
-    border-bottom: 1px solid rgb(249, 89, 89);
+    border-bottom: 1px solid #9BA4B5;
 }
 
 .link { 
@@ -73,10 +73,10 @@
     color:#e3e3e3;
 }
 
-h1 { 
+.main-title { 
     font-size: 72px;
-
 }
+
 .icon-home { 
     height: 35px;
     width: 35px;
@@ -97,7 +97,10 @@ h1 {
     margin: 5px;
     box-shadow: 1px 1px;
 }
-
+.posts { 
+    text-align: center;
+    font-size: 32px;
+}
 @media(max-width: 990px) {
     .home-hero { 
         flex-wrap: wrap;
