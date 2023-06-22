@@ -9,7 +9,8 @@ const Wrapper = styled.div`
     margin-right: 150px;
     
     ul { 
-        list-style-type: none;
+        padding-left: 50px;
+        margin: 10px;
     }
     h1{ 
         padding: 35px;
@@ -21,14 +22,26 @@ const Wrapper = styled.div`
     }
     h3 { 
         text-decoration: underline;
-        padding: 15px
+        padding: 20px
     }
     li { 
-        padding-left: 10px;
+     
     }
     code { 
         font-size: 15px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    @media(max-width: 460px){
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
 
+        code { 
+            font-size: 12px;
+            overflow: scroll;
+            height: 200px;
+        }
     }
 `
 

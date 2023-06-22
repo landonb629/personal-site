@@ -14,17 +14,9 @@ import {Content} from './components/Content'
 
 
 function App() {
-  const [showNav, setShowNav] = useState(false)
-
-  const toggleNav = () => { 
-    setShowNav(!showNav)
-  }
   return (
     <div className='container'>
-      <div className='nav'>
           <Nav/>
-      </div>
-      
       <div className='content'>
       <Routes>
           <Route path="/" element={<Home />}/>

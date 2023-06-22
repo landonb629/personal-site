@@ -10,6 +10,12 @@ export const data = [
         "timestamp": "6/8/2023",
         "tags": ["Azure", "Terraform"],
         "location": "enabling-vm-insights-terraform"
+    },
+    {
+        "name": "Setting Up a Local ArgoCD environment",
+        "timestamp": "6/21/2023",
+        "tags": ["Kubernetes", "CI/CD"],
+        "location": "deploy-argo-local"
     }
 ]
 
@@ -19,6 +25,12 @@ export const posts = [
         "timestamp": "6/8/2023",
         "tags": ["Azure", "VMs", "Terraform", "Github Actions", "CosmosDB", "NodeJs"],
         "location": "mern-azure-vmss"
+    },
+    {
+        "name": "Azure Container Apps Demo",
+        "timestamp": "6/21/2023",
+        "tags": ["Azure", "Container Apps", "Github Actions", "CosmosDB", "MERN", "Terraform"],
+        "location": "container-app-demo"
     }
 ]
 
