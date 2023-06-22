@@ -2,9 +2,9 @@
 
 Enabling VM insights using Terraform isn't straight forward. Here is how to do it. This post intends to highlight the following:
 
-* -resources needed to enable VM insights with TF
-* -high level overview of those resources
-* -how to find the information needed to complete the terraform resources  
+* Resources needed to enable VM insights with TF
+* High level overview of those resources
+* How to find the information needed to complete the terraform resources  
 
 This post won't be covering what VM insights is. I'll be creating a separate post for that.  
 
@@ -16,23 +16,9 @@ This post won't be covering what VM insights is. I'll be creating a separate pos
 - VM extensions installed (Dependency agent, Azure monitoring agent)
 - log analytics workspace 
 
-
-### High level overview of required resources 
-
-Data collection rules - 
-
-Data collection endpoint - 
-
-Data collection rule assocation - 
-
-VM extensions - 
-
-Log analytics workspace -
-
-
 ### finding information about these for terraform with the az cli 
 
-``` az vm extension image list --query "[?starts_with(publisher, 'Microsoft.Azure.Monitor'].publisher" -o tsv | sort -u | xargs -I{} az vm extension image list-names --publisher {} -l eastus ```
+``` az vm extension image list --query "[?starts_with(publisher, 'Microsoft.Azure.Monitor'].publisher" -o tsv | sort -u | xargs -I {} az vm extension image list-names --publisher {} -l eastus ```
 
 ### Monitor Agent
 ```
