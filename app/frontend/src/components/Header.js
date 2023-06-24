@@ -24,6 +24,7 @@ const Wrapper = styled.div`
 
 const Header = (pathData) => { 
     const {id} = useParams()
+    console.log(id)
    return (
        <Wrapper>
        <div className='container'>
