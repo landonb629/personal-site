@@ -1,4 +1,5 @@
 export const data = [ 
+    /*
     {
         "name": "Passing Environment Variables to React Applications",
         "timestamp": "6/8/2023",
@@ -17,9 +18,11 @@ export const data = [
         "tags": ["Kubernetes", "CI/CD"],
         "location": "deploy-argo-local"
     }
+    */
 ]
 
 export const posts = [
+    
     {
         "name": "MERN App on Azure VMSS",
         "timestamp": "6/8/2023",
@@ -31,6 +34,20 @@ export const posts = [
         "timestamp": "6/21/2023",
         "tags": ["Azure", "Container Apps", "Github Actions", "CosmosDB", "MERN", "Terraform"],
         "location": "container-app-demo"
+    }
+    
+]
+
+export const experience = [ 
+    { 
+        "job": "Devops Engineer",
+        "years": "1 year, 2 months",
+        "company": "HexArmor", 
+        "description": [
+            "worked on item1",
+            "worked on item2",
+            "worked on item3"
+        ]
     }
 ]
 
