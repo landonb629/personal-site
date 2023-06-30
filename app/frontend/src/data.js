@@ -39,15 +39,47 @@ export const posts = [
 ]
 
 export const experience = [ 
+    {
+        "job": "Senior Cloud Engineer",
+        "years": "Present",
+        "company": "Caylent",
+        "description": "description"
+    },
     { 
         "job": "Devops Engineer",
         "years": "1 year, 2 months",
         "company": "HexArmor", 
-        "description": [
-            "worked on item1",
-            "worked on item2",
-            "worked on item3"
-        ]
+        "description": "Modernizing application infrastructure using containerization / Azure / AWS / Terraform. AWS services used consisted of EC2, S3, ALB, ECS, Elasticache, and RDS. Architecting and implementing virtual netowrks in Azure and AWS."
+    },
+    { 
+        "job": "Devops Engineer",
+        "years": "5 Months",
+        "company": "Intelerad Medical Systems",
+        "description": "Supported customers leveraging medical imaging software, worked with a wide range of tech. Mostly engineering in AWS, but had hands in GCP, Azure, and on-premise VMware clusters. doing the ~devops~ with ansible, terraform, puppet, and jenkins."
+    },
+    {
+        "job": "Infrastructure Security Engineer",
+        "years": "5 Months",
+        "company": "Intelerad Medical Systems",
+        "description": "description from job"
+    },
+    {
+        "job": "Network Systems Engineer",
+        "years": "6 Months",
+        "company": "Courier Express",
+        "description": "description from job"
+    },
+    {
+        "job": "Network Administrator",
+        "years": "9 Months",
+        "company": "Courier Express",
+        "description": "description from job"
+    },
+    {
+        "job": "IT co-op",
+        "years": "9 Months",
+        "company": "McKenney's Inc.",
+        "description": "description from job"
     }
 ]
 

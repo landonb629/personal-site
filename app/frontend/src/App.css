@@ -183,33 +183,71 @@ nav {
 }
 
 /* EXPERIENCE PAGE STYLES */
-
+/*
 .jobs { 
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border: black 1px solid;
     border-radius: 15px;
     padding: 15px;
     margin: 15px;
+    justify-content: space-between;
+    box-shadow: 1px 1px;
+}
+.experience-hero { 
+ margin: 0px 150px; 
 }
 
-.hide-job-desc { 
-    visibility: hidden;
-    height: 0px;
-    width: 0px;
-}
 
-.job-desc { 
-    visibility: visible;
-}
+*/
 
-.job-dropdown { 
+.timeline { 
     position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
 }
 
-.job-dropdown-menu { 
-    position: absolute;
+.timeline-container { 
+    padding: 10px 50px;
+    position: relative;
     background-color: #233142;
+    width: 50%;
+}   
+
+.experience-header { 
+    text-align: center;
+    padding: 50px;
+    background-color: #9BA4B5;
+    width: 100vw;
+}
+
+.text-box { 
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-container { 
+    left: 0;
+}
+
+.right-container { 
+    left: 50%
+}
+
+.container-img-left { 
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+
+}
+
+.container-img-right { 
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    left: -20px;
 }
 
