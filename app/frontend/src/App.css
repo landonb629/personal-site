@@ -44,7 +44,7 @@
 .posts-container { 
     margin: 15px;
     height: auto;
-    width: 250px;
+    width: 300px;
     padding: 50px;
     border: 2px solid black;
     border-radius: 15px;
@@ -182,35 +182,28 @@ nav {
     }
 }
 
-/* EXPERIENCE PAGE STYLES */
-/*
-.jobs { 
-    display: flex;
-    align-items: center;
-    border: black 1px solid;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 15px;
-    justify-content: space-between;
-    box-shadow: 1px 1px;
-}
-.experience-hero { 
- margin: 0px 150px; 
-}
-
-
-*/
 
 .timeline { 
     position: relative;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 100px auto;
+}
+
+.timeline::after { 
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
 }
 
 .timeline-container { 
     padding: 10px 50px;
     position: relative;
-    background-color: #233142;
     width: 50%;
 }   
 
@@ -221,11 +214,16 @@ nav {
     width: 100vw;
 }
 
+.experience-description { 
+    padding: 7px;
+}
+
 .text-box { 
     padding: 20px 30px;
     background-color: white;
     border-radius: 6px;
     font-size: 15px;
+    position: relative;
 }
 
 .left-container { 
@@ -241,7 +239,8 @@ nav {
     width: 40px;
     border-radius: 50%;
     right: -20px;
-
+    top: 32px;
+    z-index: 10;
 }
 
 .container-img-right { 

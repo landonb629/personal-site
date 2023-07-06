@@ -60,15 +60,6 @@ export const Content = () => {
         setContent(text)
     }
 
-    const sendPost = () => { 
-        // send API request to endpoint
-        //python API communicating with 
-    }
-
-    const getViews = () => { 
-        // get views from api endpoint
-    }
-
     useEffect(() => { 
         const getData = async () => { 
             await fetchData()
