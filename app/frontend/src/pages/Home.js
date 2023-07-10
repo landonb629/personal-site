@@ -20,10 +20,24 @@ export const Home = () => {
         setIsLoading(true)
         populatePost()
         setIsLoading(false)
+        console.log(posts.length)
     },[])
 
     if (isLoading) { 
         return <div>Loading....</div>
+    }
+    if (posts.length < 1) { 
+        return(
+        <div className='home-header'>
+            <div className='main'>
+                <h1 className='main-title'>Landon Babay</h1>
+                <div className='icon-container'><FaAws className='icon-home' /><SiKubernetes className='icon-home' /><SiMicrosoftazure className='icon-home'/><SiLinux className='icon-home' /></div>
+                <h3>DevOps / Cloud Engineer</h3>
+            </div>
+            <h3 className='posts'>Technical content coming soon..</h3>
+            <p className='posts'>In the meantime, checkout the rest of the site!</p>
+        </div>  
+        )  
     }
     return(
         <div className='home-header'>
