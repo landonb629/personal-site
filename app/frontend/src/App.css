@@ -183,70 +183,33 @@ nav {
 }
 
 
-.timeline { 
-    position: relative;
-    max-width: 1000px;
-    margin: 100px auto;
+/* EXPERIENCE PAGE */
+
+.job-box { 
+    display: flex;
+    background-color: white;
+    margin: 50px;
+    padding: 35px;
+    border-radius: 10px;
 }
 
-.timeline::after { 
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: white;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-}
-
-.timeline-container { 
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-}   
-
-.experience-header { 
-    text-align: center;
-    padding: 50px;
-    background-color: #9BA4B5;
-    width: 100vw;
-}
-
-.experience-description { 
-    padding: 7px;
+.job-img { 
+    height: 75px;
+    width: auto;
+    border-radius: 50px;
 }
 
 .text-box { 
-    padding: 20px 30px;
-    background-color: white;
-    border-radius: 6px;
-    font-size: 15px;
-    position: relative;
+    padding-left: 15px;
 }
 
-.left-container { 
-    left: 0;
+.experience-header { 
+    background-color: #9BA4B5;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.right-container { 
-    left: 50%
+.experience-description { 
+    padding-top: 15px;
 }
-
-.container-img-left { 
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    right: -20px;
-    top: 32px;
-    z-index: 10;
-}
-
-.container-img-right { 
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    left: -20px;
-}
-
