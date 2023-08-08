@@ -39,7 +39,6 @@ export const posts = [
 ]
 
 export const experience = [ 
-    /*
     {
         "job": "Senior Cloud Engineer",
         "years": "Present",
@@ -47,7 +46,6 @@ export const experience = [
         "description": "Providing cloud native solutions to customers in AWS. Building with Terraform, AWS CDK, Github Actions, Kubernetes, AWS Lambda, and more.",
         "picture": "caylent.png"
     },
-    */
     { 
         "job": "Devops Engineer",
         "years": "1 year, 2 months",
