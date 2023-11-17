@@ -4,7 +4,4 @@ This repository holds the code for my personal website, which you can find at ht
 
 ### Tools and Tech
 
-Infrastructure: 
-    - EC2 instances bootstrapped into a kubernetes cluster with kubeadm
-    - DynamoDB for tracking requests made for each website 
-    - backend API is a kubernetes deployment running a django app 
+ Application is a a react frontend leveraging markdown documents for the articles. this app is running on s3 with cloudfront, and leveraging CDK for deployments with codepipeline.
